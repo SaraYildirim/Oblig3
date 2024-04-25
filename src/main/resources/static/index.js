@@ -90,7 +90,7 @@ function kjopBillett() {
     if (enBillett.antall === "" && enBillett.film === "feilFilm" && enBillett.etternavn === "" && enBillett.telefonnr === "" && enBillett.epost === "") {
         return;
     } else {
-        $.post("/lagBillett", enBillett, function () {
+        $.post("/lagre", enBillett, function () {
             hentAlle();
         });
     }
